@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="quizContainer">
+      <h2>Select the theme:</h2>
+      <button id="mathBtn">Math</button>
+      <button id="historyBtn">History</button>
+    </div>
+
+    <div id="mathContainer" class="quiz-page hide">
+      <h2>Math Quiz</h2>
+      <div id="mathQuestion">Question will appear here</div>
+      <div id="mathAnswerButtons" class="answer-buttons"></div>
+      <button id="nextBtnMath" class="btn">Next</button>
+      <button id="restartBtnMath" class="btn hide">Restart</button>
+    </div>
+
+    <div id="historyContainer" class="quiz-page hide">
+      <h2>History Quiz</h2>
+      <div id="historyQuestion">Question will appear here</div>
+      <div id="historyAnswerButtons" class="answer-buttons"></div>
+      <button id="nextBtnHistory" class="btn">Next</button>
+      <button id="restartBtnHistory" class="btn hide">Restart</button>
+    </div>
+
+    <div id="result" class="hide">Your final score:</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

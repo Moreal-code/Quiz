@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+#quizContainer,
+.quiz-page {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.hide {
+  display: none;
+}
+
+.answer-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.answer-buttons .input-group {
+  margin: 10px 0;
+}
+
+#mathBtn {
+  padding: 1rem;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+#historyBtn {
+  padding: 1rem;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+#mathBtn:hover {
+  background: blue;
+}
+
+#historyBtn:hover {
+  background: blue;
+}
+
+.btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: blue;
+}
+
+@media (min-width: 768px) {
+  #quizContainer,
+  .quiz-page {
+    max-width: 800px;
+    padding: 40px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+
+  .answer-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .answer-buttons .input-group {
+    margin: 10px;
+    flex: 1;
+  }
+}
